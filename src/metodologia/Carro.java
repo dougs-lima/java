@@ -1,4 +1,4 @@
-package Metodologia;
+package metodologia;
 
 public class Carro {
 

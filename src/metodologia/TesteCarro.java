@@ -1,4 +1,4 @@
-package Metodologia;
+package metodologia;
 
 public class TesteCarro {
     public static void main(String[] args) {
