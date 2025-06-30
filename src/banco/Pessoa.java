@@ -46,7 +46,7 @@ public class Pessoa {
     public void setFecharConta() {
         System.out.println("Qual o número da sua conta? ");
         this.numContaFechar = scan.nextLine();
-        if (numContaFechar.equals(getNumeroConta())) {
+        /*if (numContaFechar.equals(this.getNumeroConta())) {
             for (int i = 0; i < 3; i++) {
                 System.out.println("Digite a senha: ");
                 this.senhaContaFechar = scan.nextInt();
@@ -62,7 +62,7 @@ public class Pessoa {
             }
         } else {
             System.out.println("Conta não existente.");
-        }
+        }*/
     }
     //public
 }
