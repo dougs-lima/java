@@ -6,6 +6,10 @@ public class Conta {
     private int senha;
     private boolean status;
 
+    /*public Conta(String numConta) {
+        this.numeroConta = "123";
+    }*/
+
 
     public void setCriacaoConta() {
         this.numeroConta = String.format("%04d", proximoNumeroConta);
