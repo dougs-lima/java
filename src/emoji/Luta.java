@@ -63,11 +63,11 @@ public class Luta {
         this.desafiado = desafiado;
     }
 
-    public String getDesafiante() {
+    public Lutador getDesafiante() {
         return desafiante;
     }
 
-    public void setDesafiante(String desafiante) {
+    public void setDesafiante(Lutador desafiante) {
         this.desafiante = desafiante;
     }
 
