@@ -15,11 +15,11 @@ public class Livro implements Publicacao {
                 "\nTotal de páginas = " + totPaginas +
                 "\nPágina atual = " + pagAtual +
                 "\nAberto = " + aberto +
-                "\nLeitor = " + leitor +
-                '}';
+                "\nLeitor = " + leitor.getNome() +
+                "\nIdade = " + leitor.getIdade();
     }
 
-    public Livro(String titulo, String autor, int totPaginas, Pessoa leitorint) {
+    public Livro(String titulo, String autor, int totPaginas, Pessoa leitor) {
         this.titulo = titulo;
         this.totPaginas = totPaginas;
         this.aberto = false;
@@ -88,6 +88,11 @@ public class Livro implements Publicacao {
 
     @Override
     public void folhear(int p) {
+        if (p > this.totPaginas) {
+            this.pagAtual = 0;
+        } else {
+            this.pagAtual = p;
+        }
         this.pagAtual = p;
     }
 
